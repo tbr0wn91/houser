@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 
 export default function House(props){
     console.log(`this is props`, props)
-    const {houses} = props;
+    const {houses,deleteHouse} = props;
     return (
         
         <div>
@@ -11,6 +11,8 @@ export default function House(props){
         {houses.city}
         {houses.state}
         {houses.zip}
+
+        <button onClick={deleteHouse}>Delete</button>
         </div>
     )
 

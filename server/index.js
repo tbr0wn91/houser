@@ -17,4 +17,6 @@ massive(CONNECTION_STRING).then(db => {
 });
 
 
+app.get('/api/houses', controller.getAllHouses);
+
 app.listen(PORT, () => console.log(`listening in on port ${PORT}`))
